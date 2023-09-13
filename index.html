@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="sofa.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="form.js" defer></script>
+    <title>Design</title>
+</head>
+<body>
+    <div id="container">
+    <header id="cabecalho">
+        <span id="logo"><img src="logo2-removebg.png" alt="Logo Design"></span>
+        <nav id="navegacao">
+            <ul id="unorded-list">
+                <li><a href="#principal" class="menu-link">Home</a></li>
+                <li><a href="#contact" class="menu-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="principal">
+        <div id="side-by-side">
+            <div id="left-column">
+                <h1 class="titles">Bem Vindo ao<br>Design</h1>
+                <span>Nossa equipe de designers altamente qualificados está pronta para transformar suas ideias em realidade.</span>
+            </div> 
+
+            <div id="right-column">
+                <video src="video.mp4" type="video/mp4" muted></video>
+            </div>
+        </div>
+            <div id="about">
+                <article>
+                    <h2>Sobre</h2>
+                    <p>"Design é a alma fundamental de uma criação humana, que se expressa em camadas externas sucessivas do produto ou serviço. Uma empresa de design tem o desafio de combinar funcionalidade e beleza para gerar soluções eficientes, seguras, confortáveis e bonitas em todos os tipos de criações humanas."</p>
+                </article>
+            </div>
+            <!--Imagens -->
+            <div id="container-photos">
+            <div class="image-container">
+                <img src="images/img1.jpg" alt="Image 1">
+                <img src="images/img2.jpg" alt="Image 2">
+                <img src="images/img3.jpg" alt="Image 3">
+                <img src="images/img4.jpg" alt="Image 4">
+                <div class="arrow arrow-left">&lt;</div>
+                <div class="arrow arrow-right">&gt;</div>
+              </div>
+            </div>
+    </main>
+        <footer>
+            <div id="contact">
+                <h3>Contato</h3>
+                <address>
+                    Design<br>
+                    500 Terry Francois Street<br>
+                    San Francisco, CA 94158<br>
+                    Tel: 123-456-7890<br>
+                    Email: info@myslle.com
+                </address>
+            </div>
+            <div id="social-media">
+                <h3 class="custom-footer">Conecte-se Conosco</h3>
+                <a href="https://www.linkedin.com/in/guilherme-santana-prado-131b86183/" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon> Linkedin</a>
+                <br>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
+                <br>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-youtube"></ion-icon>Youtube </a>
+            </div>
+            <div id="message">
+                <h3 class="custom-footer">Deixe sua mensagem</h3>
+                <form id="form" action="https://formspree.io/f/xrgwqnql"
+                method="POST">
+                    <input type="text" id="name" name="name" placeholder="Nome Completo" required>
+                    <input type="email" id="email" name="email" placeholder="Email"  required>
+                    <br>
+                    <label>
+                        <textarea name="message" cols="43" style="resize: none;" placeholder="Digite sua mensagem" required></textarea>
+                      </label>
+                    <br>
+                    <button type="submit" id="botao">Enviar</button>
+                  </form>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
